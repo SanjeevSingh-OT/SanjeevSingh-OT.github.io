@@ -2434,14 +2434,14 @@ body.loaded {
   top: 0;
   width: 100vw;
   height: 110vh;
-  fill: #f1faff;
+  fill: #f1faff !important;
 }
 
 .preloader .preloader-heading .load-text {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 15px;
-  color: #222;
+  color: #222 !important;
   text-transform: uppercase;
   z-index: 20;
 }
@@ -3116,8 +3116,8 @@ ul.blog_pagination li a:hover {
 
 /* Footer styles */
 .footer {
-  background: linear-gradient(to right, #f1faff, #d4eefb);
-  color: white;
+  background: linear-gradient(to right, #f1faff, #d4eefb) !important;
+  color: #1a365d !important;
   padding: 40px 10%;
   position: relative;
   overflow: hidden;
@@ -3167,7 +3167,7 @@ ul.blog_pagination li a:hover {
   flex: 1; /* Allow to grow equally */
   min-width: 200px; /* Set minimum width for responsiveness */
   margin: 0 20px; /* Space between sections */
-  color: #1a365d;
+  color: #1a365d !important;
 }
 
 .footer-nav h3,

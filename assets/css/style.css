@@ -36,13 +36,19 @@ Version      : 1.0
 :root {
   --main-color: #444;
   --heading-color: #000;
-  --primary-color: #448c74;
+  --primary-color: #0a74da;
   --lighter-color: #444;
   --subtitle-color: #444;
   --black-color: #000;
   --border-color: rgba(119, 119, 125, 0.2);
   --button-border: rgba(119, 119, 125, 0.2);
-  --body-background: #ecf3f1;
+  --body-background: linear-gradient(
+    135deg,
+    #feffff 30%,
+    #fcfeff 60%,
+    #eaf5fa 100%
+  );
+
   --grey-bg: #e6eaee;
   --primary: #2b6cb0;
   --text-primary: #1a202c;
@@ -451,7 +457,7 @@ html {
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: #000;
+  background: #4299e1;
 }
 
 .theme-btn:active {
@@ -883,7 +889,7 @@ html {
 }
 
 .header-inner {
-  padding: 30px 0px;
+  padding: 10px 0px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -2393,7 +2399,6 @@ ul.extra-skills li i {
 * 15.PRELOADER & BOUNCE CCS STYLE
 * ----------------------------------------------------------------------------------------
 */
-
 body.loaded {
   overflow: hidden !important;
   height: 100% !important;
@@ -2406,18 +2411,22 @@ body.loaded {
   width: 100%;
   left: 0;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background: transparent;
   z-index: 99999999999999;
+  opacity: 1; /* Default state */
+  visibility: visible; /* Default state */
+  transform: translateY(0); /* Default state */
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+}
+
+.preloader.hide {
+  opacity: 0; /* Fade out */
+  visibility: hidden; /* Hide after fade-out */
+  transform: translateY(-50px); /* Slide up */
 }
 
 .preloader svg {
@@ -2425,14 +2434,14 @@ body.loaded {
   top: 0;
   width: 100vw;
   height: 110vh;
-  fill: var(--tj-black-2);
+  fill: #f1faff;
 }
 
 .preloader .preloader-heading .load-text {
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 15px;
-  color: #fff;
+  color: #222;
   text-transform: uppercase;
   z-index: 20;
 }
@@ -2529,6 +2538,7 @@ body.loaded {
   top: 8px;
   font-size: 25px;
   text-align: center;
+  color: #222; /* Changed to a darker shade for better visibility */
 }
 
 .progress-wrap svg path {
@@ -2536,7 +2546,7 @@ body.loaded {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #fff;
+  stroke: #222; /* Changed to a darker shade */
   stroke-width: 4;
   box-sizing: border-box;
   -webkit-transition: all 400ms linear;
@@ -3106,7 +3116,7 @@ ul.blog_pagination li a:hover {
 
 /* Footer styles */
 .footer {
-  background-color: #1e1e1e; /* Dark background for modern look */
+  background: linear-gradient(to right, #f1faff, #d4eefb);
   color: white;
   padding: 40px 10%;
   position: relative;
@@ -3149,6 +3159,7 @@ ul.blog_pagination li a:hover {
   margin-top: 20px;
   text-align: center;
   font-weight: 300;
+  color: #1a365d;
 }
 
 .footer-nav,
@@ -3156,14 +3167,15 @@ ul.blog_pagination li a:hover {
   flex: 1; /* Allow to grow equally */
   min-width: 200px; /* Set minimum width for responsiveness */
   margin: 0 20px; /* Space between sections */
+  color: #1a365d;
 }
 
 .footer-nav h3,
 .footer-contact h3 {
   margin-bottom: 10px;
   font-size: 20px; /* Increased heading size */
-  color: #2fa7ea; /* Eye-catching color for headings */
-  border-bottom: 2px solid #2fa7ea; /* Underline effect */
+  color: #1a365d; /* Eye-catching color for headings */
+  border-bottom: 2px solid linear-gradient(90deg, #2b6cb0, #4299e1); /* Underline effect */
   padding-bottom: 5px; /* Space between heading and content */
 }
 .footer-nav h3 {
@@ -3182,14 +3194,14 @@ ul.blog_pagination li a:hover {
 }
 
 .footer-nav a {
-  color: #bbb; /* Softer color for links */
+  color: #000; /* Softer color for links */
   text-decoration: none;
   transition: color 0.3s ease, padding-left 0.3s ease; /* Added padding transition */
   padding-left: 5px; /* Space on the left */
 }
 
 .footer-nav a:hover {
-  color: #61dafb; /* Changes color on hover */
+  color: var(--primary-color); /* Changes color on hover */
   padding-left: 15px; /* Animation for moving to the right */
 }
 
@@ -3215,7 +3227,7 @@ ul.blog_pagination li a:hover {
 }
 
 /* Adding colorful backgrounds for social icons */
-.social-icons a:nth-child(1) {
+.social-icons a:nth-child(0) {
   background-color: #0057ff; /* Behance */
   border-radius: 50%;
   padding: 10px;
@@ -3226,7 +3238,7 @@ ul.blog_pagination li a:hover {
   justify-content: center;
 }
 
-.social-icons a:nth-child(2) {
+.social-icons a:nth-child(1) {
   background-color: #25d366; /* WhatsApp */
   border-radius: 50%;
   padding: 10px;
@@ -3237,7 +3249,7 @@ ul.blog_pagination li a:hover {
   justify-content: center;
 }
 
-.social-icons a:nth-child(3) {
+.social-icons a:nth-child(2) {
   background-color: #b71d5d; /* Instagram */
   border-radius: 50%;
   padding: 10px;
@@ -3248,7 +3260,7 @@ ul.blog_pagination li a:hover {
   justify-content: center;
 }
 
-.social-icons a:nth-child(4) {
+.social-icons a:nth-child(3) {
   background-color: #0077b5; /* LinkedIn */
   border-radius: 50%;
   padding: 10px;

@@ -189,13 +189,25 @@
               <div class="about-social text-center">
                 <ul>
                   <li>
-                    <a href=""><i class="ri-twitter-x-line"></i></a>
+                    <a
+                      href="https://x.com/SanjeevSingh682"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="ri-twitter-x-line"></i
+                    ></a>
                   </li>
                   <li>
-                    <a href=""><i class="ri-linkedin-fill"></i></a>
+                    <a
+                      href="https://www.linkedin.com/in/sanjeev-singh-605786114?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="ri-linkedin-fill"></i
+                    ></a>
                   </li>
                   <li>
-                    <a href=""><i class="ri-github-line"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"
+                      ><i class="ri-earth-line"></i
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -225,9 +237,16 @@
                 </ul>
               </div>
               <div class="hero-btns">
-                <a href="contact.html" class="theme-btn"
-                  >Download CV <i class="ri-download-line"></i
-                ></a>
+                <div class="theme-btn">
+                  <a
+                    href="./Sanjeev_Kumar_Singh.pdf"
+                    id="download-btn"
+                    download="SanjeevSingh_resume.pdf"
+                    class="color-white"
+                  >
+                    <i class="fas fa-download"></i> Download CV
+                  </a>
+                </div>
               </div>
             </div>
             <div class="about-content-part-bottom wow fadeInUp delay-0-2s">
@@ -1102,8 +1121,9 @@
                   id="contactForm"
                   class="contactForm"
                   name="contactForm"
-                  action="assets/php/form-process.php"
-                  method="post"
+                  action="https://formspree.io/f/xzzzyapp"
+                  method="POST"
+                  onsubmit="showSuccessMessage(event)"
                 >
                   <div class="row">
                     <div class="col-md-6">
@@ -1114,9 +1134,8 @@
                           id="name"
                           name="name"
                           class="form-control"
-                          value=""
                           placeholder="Steve Milner"
-                          required=""
+                          required
                           data-error="Please enter your Name"
                         />
                         <label for="name" class="for-icon"
@@ -1133,9 +1152,8 @@
                           id="email"
                           name="email"
                           class="form-control"
-                          value=""
                           placeholder="hello@websitename.com"
-                          required=""
+                          required
                           data-error="Please enter your Email"
                         />
                         <label for="email" class="for-icon"
@@ -1153,7 +1171,7 @@
                           class="form-control"
                           rows="4"
                           placeholder="Write Your message"
-                          required=""
+                          required
                           data-error="Please Write your Message"
                         ></textarea>
                         <div class="help-block with-errors"></div>
@@ -1164,11 +1182,52 @@
                         <button type="submit" class="theme-btn">
                           Send Me Message <i class="ri-mail-line"></i>
                         </button>
-                        <div id="msgSubmit" class="hidden"></div>
+                        <div
+                          id="msgSubmit"
+                          style="
+                            display: none;
+                            margin-top: 15px;
+                            color: green;
+                            font-weight: bold;
+                            animation: fadeIn 1s;
+                          "
+                        >
+                          Your message has been sent successfully!
+                        </div>
                       </div>
                     </div>
                   </div>
                 </form>
+
+                <script>
+                  function showSuccessMessage(event) {
+                    event.preventDefault(); // Prevent default form submission for demo purposes.
+
+                    // Display the success message
+                    const successMessage = document.getElementById("msgSubmit");
+                    successMessage.style.display = "block";
+
+                    // Reset the form fields
+                    document.getElementById("contactForm").reset();
+
+                    // Optionally hide the message after a few seconds
+                    setTimeout(() => {
+                      successMessage.style.display = "none";
+                    }, 5000);
+                  }
+                </script>
+
+                <!-- CSS Animation -->
+                <style>
+                  @keyframes fadeIn {
+                    from {
+                      opacity: 0;
+                    }
+                    to {
+                      opacity: 1;
+                    }
+                  }
+                </style>
               </div>
             </div>
             <!-- / END CONTACT FORM DESIGN AREA -->
@@ -1196,9 +1255,9 @@
           <!-- new -->
           <div class="theme-btn">
             <a
-              href="./assets/Product Designer CV____Ashish Kumar 1.pdf"
+              href="./Sanjeev_Kumar_Singh.pdf"
               id="download-btn"
-              download="AshishKumar_CV.pdf"
+              download="SanjeevSingh_resume.pdf"
               class="color-white"
             >
               <i class="fas fa-download"></i> Download CV
@@ -1233,14 +1292,14 @@
               <i class="fab fa-whatsapp"></i>
             </a>
             <a
-              href="https://www.instagram.com/ashishkumarask2106?igsh=MmRhOTY1eXVrOGd5"
+              href="https://x.com/SanjeevSingh682"
               target="_blank"
-              aria-label="Instagram"
+              aria-label="twitter"
             >
-              <i class="fab fa-instagram"></i>
+              <i class="ri-twitter-x-line"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/ashish-kumar-78a071162/"
+              href="https://www.linkedin.com/in/sanjeev-singh-605786114?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               aria-label="LinkedIn"
             >

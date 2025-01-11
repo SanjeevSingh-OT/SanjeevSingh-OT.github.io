@@ -254,19 +254,18 @@
                 <div class="scroller" data-direction="left" data-speed="slow">
                   <div class="scroller__inner">
                     <h4>
-                      Working as a creative & outsource your OT system design
-                      project & get it quickly done and delivered remotely
-                      online.
+                      I’m passionate about designing and securing OT systems,
+                      blending technical expertise with strategic proposal
+                      management to deliver impactful solutions. My experience
+                      spans industrial automation and OT cybersecurity, working
+                      with technologies like SCADA, PLC, and security frameworks
+                      such as ISA/IEC 62443. I enjoy optimizing processes,
+                      crafting innovative solutions, and collaborating with
+                      global teams to ensure secure, efficient operations. With
+                      a problem-solving mindset and a focus on continuous
+                      learning, I am driven to meet the evolving challenges of
+                      securing critical industrial environments.
                     </h4>
-                    <h4>
-                      I’m a professional responsible for the overall design and
-                      security of OT systems.
-                    </h4>
-                    <h4>
-                      Digital agencies can vary in size and specialization.
-                    </h4>
-                    <h4>Some may focus on specific niches</h4>
-                    <h4>Offer a wide range of services to help businesses</h4>
                   </div>
                 </div>
               </div>
@@ -1123,7 +1122,6 @@
                   name="contactForm"
                   action="https://formspree.io/f/xzzzyapp"
                   method="POST"
-                  onsubmit="showSuccessMessage(event)"
                 >
                   <div class="row">
                     <div class="col-md-6">
@@ -1134,8 +1132,9 @@
                           id="name"
                           name="name"
                           class="form-control"
+                          value=""
                           placeholder="Steve Milner"
-                          required
+                          required=""
                           data-error="Please enter your Name"
                         />
                         <label for="name" class="for-icon"
@@ -1152,8 +1151,9 @@
                           id="email"
                           name="email"
                           class="form-control"
+                          value=""
                           placeholder="hello@websitename.com"
-                          required
+                          required=""
                           data-error="Please enter your Email"
                         />
                         <label for="email" class="for-icon"
@@ -1171,7 +1171,7 @@
                           class="form-control"
                           rows="4"
                           placeholder="Write Your message"
-                          required
+                          required=""
                           data-error="Please Write your Message"
                         ></textarea>
                         <div class="help-block with-errors"></div>
@@ -1182,52 +1182,11 @@
                         <button type="submit" class="theme-btn">
                           Send Me Message <i class="ri-mail-line"></i>
                         </button>
-                        <div
-                          id="msgSubmit"
-                          style="
-                            display: none;
-                            margin-top: 15px;
-                            color: green;
-                            font-weight: bold;
-                            animation: fadeIn 1s;
-                          "
-                        >
-                          Your message has been sent successfully!
-                        </div>
+                        <div id="msgSubmit" class="hidden"></div>
                       </div>
                     </div>
                   </div>
                 </form>
-
-                <script>
-                  function showSuccessMessage(event) {
-                    event.preventDefault(); // Prevent default form submission for demo purposes.
-
-                    // Display the success message
-                    const successMessage = document.getElementById("msgSubmit");
-                    successMessage.style.display = "block";
-
-                    // Reset the form fields
-                    document.getElementById("contactForm").reset();
-
-                    // Optionally hide the message after a few seconds
-                    setTimeout(() => {
-                      successMessage.style.display = "none";
-                    }, 5000);
-                  }
-                </script>
-
-                <!-- CSS Animation -->
-                <style>
-                  @keyframes fadeIn {
-                    from {
-                      opacity: 0;
-                    }
-                    to {
-                      opacity: 1;
-                    }
-                  }
-                </style>
               </div>
             </div>
             <!-- / END CONTACT FORM DESIGN AREA -->
@@ -1294,7 +1253,7 @@
             <a
               href="https://x.com/SanjeevSingh682"
               target="_blank"
-              aria-label="twitter"
+              aria-label="Instagram"
             >
               <i class="ri-twitter-x-line"></i>
             </a>

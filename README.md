@@ -1,3 +1,3 @@
-# SanjeevSingh-ics.github.io
+# SanjeevSingh-OT.github.io
 
 # This one is the updated one

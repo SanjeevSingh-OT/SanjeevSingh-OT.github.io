@@ -3160,6 +3160,7 @@ ul.blog_pagination li a:hover {
   text-align: center;
   font-weight: 300;
   color: #1a365d;
+  margin-bottom: 10px;
 }
 
 .footer-nav,
@@ -3250,7 +3251,7 @@ ul.blog_pagination li a:hover {
 }
 
 .social-icons a:nth-child(2) {
-  background-color: #b71d5d; /* Instagram */
+  background-color: #1a202c; /* Instagram */
   border-radius: 50%;
   padding: 10px;
   width: 45px;

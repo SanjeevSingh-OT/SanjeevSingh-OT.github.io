@@ -712,3 +712,24 @@
     min-height: 150px;
   }
 }
+
+/* new  */
+.about-section-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.about-section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 4%;
+  transform: translateX(-4%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2b6cb0, #4299e1);
+  border-radius: 2px;
+}

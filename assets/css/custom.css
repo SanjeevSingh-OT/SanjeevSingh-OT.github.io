@@ -440,132 +440,6 @@
   font-weight: 500;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-}
-
-.skill-description {
-  color: #4a5568;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.proficiency-bar {
-  height: 4px;
-  background: #e2e8f0;
-  border-radius: 2px;
-  margin-top: 0.75rem;
-  overflow: hidden;
-}
-
-.proficiency-level {
-  height: 100%;
-  background: linear-gradient(90deg, #2b6cb0, #4299e1);
-  border-radius: 2px;
-  transition: width 0.8s ease;
-}
-
-.skills-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-  background: linear-gradient(to bottom right, #f8fafc, #ffffff);
-}
-
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #1a365d;
-  margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #2b6cb0, #4299e1);
-  border-radius: 2px;
-}
-
-.section-subtitle {
-  color: #4a5568;
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0.8rem auto;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 2rem;
-}
-
-.skill-category {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.skill-category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(43, 108, 176, 0.1);
-}
-
-.category-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #e2e8f0;
-}
-
-.category-icon {
-  width: 40px;
-  height: 40px;
-  background: #ebf8ff;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1rem;
-}
-
-.category-title {
-  color: #2d3748;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.skill-list {
-  list-style: none;
-}
-
-.skill-item {
-  margin-bottom: 1.25rem;
-  padding: 1rem;
-  background: #f8fafc;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-}
-
-.skill-item:hover {
-  background: #ebf8ff;
-  transform: translateX(5px);
-}
-
-.skill-name {
-  color: #2b6cb0;
-  font-weight: 500;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
 }
@@ -640,4 +514,201 @@
 
 .color-white {
   color: #ffffff !important;
+}
+
+/* Testimonial Section Styles - Updated */
+.testimonials-area {
+  position: relative;
+  padding: 60px 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+}
+
+.testimonial-item {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.testimonial-item .author {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.testimonial-item .author img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  border: 4px solid #f8fafc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-item .text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 90%;
+  margin: 25px auto;
+  font-style: italic;
+  position: relative;
+  min-height: 120px; /* Ensures consistent height */
+}
+
+.testimonial-item .text::before {
+  content: '"';
+  font-size: 4rem;
+  color: #e2e8f0;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.testimonial-item .testi-des {
+  margin-top: 25px;
+}
+
+.testimonial-item .testi-des h5 {
+  color: #2d3748;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.testimonial-item .testi-des span {
+  color: #718096;
+  font-size: 0.95rem;
+  display: block;
+  font-weight: 500;
+}
+
+/* Slick Slider Customization */
+.testimonials-wrap {
+  position: relative;
+  padding: 20px 0;
+}
+
+.testimonials-wrap .slick-slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.testimonials-wrap .slick-current {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Navigation Buttons - Repositioned */
+.slider-arrows {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.testimonial-prev,
+.testimonial-next {
+  position: static; /* Changed from absolute */
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #2b6cb0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(43, 108, 176, 0.2);
+  transition: all 0.3s ease;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+  background: #2c5282;
+  transform: translateY(-2px);
+}
+
+.testimonial-prev i,
+.testimonial-next i {
+  font-size: 24px;
+  color: white;
+}
+
+/* Update testimonial container to handle navigation */
+.testimonials-wrap {
+  position: relative;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+/* Loading placeholder for testimonials */
+.testimonial-item.loading {
+  min-height: 300px;
+  position: relative;
+}
+
+.testimonial-item.loading::after {
+  content: "Loading testimonials...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #718096;
+}
+
+@media (max-width: 992px) {
+  .testimonial-prev {
+    left: 10px;
+  }
+  .testimonial-next {
+    right: 10px;
+  }
+  .slider-arrows {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-item {
+    padding: 30px 20px;
+  }
+
+  .testimonial-item .author img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .testimonial-item .text {
+    font-size: 1rem;
+    min-height: 150px;
+  }
 }

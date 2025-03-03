@@ -1967,67 +1967,6 @@ ul.extra-skills li i {
 * ----------------------------------------------------------------------------------------
 */
 
-.testimonials-area {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.testimonial-item {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 20px 20px;
-  border-radius: 16px;
-  border: 1px solid var(--border-color);
-}
-
-.testimonial-item .author {
-  margin-bottom: 25px;
-  display: inline-block;
-}
-
-.testimonial-item .author img {
-  display: inline-block;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-}
-
-.testimonial-item .text {
-  margin-bottom: 30px;
-}
-
-.testimonial-item .testi-des h5 {
-  margin-bottom: 0;
-  color: var(--subtitle-color);
-  font-size: 20px;
-}
-
-.testimonial-item .testi-des span {
-  margin-bottom: 0;
-  color: #444;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.testimonial-item:hover {
-  border: 1px solid var(--primary-color);
-}
-
-.testimonial-item:hover .author:before {
-  color: var(--black-color);
-  background: var(--primary-color);
-}
-
-.testimonials-wrap {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.testimonials-wrap .testimonial-item {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 /*
 * ----------------------------------------------------------------------------------------
 * 11.PRICING CSS STYLE
